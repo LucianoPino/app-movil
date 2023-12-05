@@ -1,0 +1,10 @@
+venv
+.env
+*.pot
+*.pyc
+__pycache__/
+
+# Ignore Django migrations
+**/migrations/*
+
+.vscode
