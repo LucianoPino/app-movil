@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR-app</title>
+    <title>QR-APP</title>
 
     <link href="{% static '/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static '/bootstrap/bootstrap-icons.css' %}" rel="stylesheet">
@@ -18,19 +18,28 @@
 <body>
     <div class="container text-center">
         <div class="row">
-            <h1>QR-app</h1>
+            <h1>QR-APP</h1>
         </div>
         <div class="row">
-            <h4>Esta pagina esta siendo consumida desde</h4>
+            <h2>Esta pagina esta siendo consumida desde</h2>
         </div>
         <div class="row">
-            <p>{{user_agent}}</p>
+            <h4>({{user_agent}})</h4>
         </div>        
         <br>
         <!-- Botón para descargar el archivo -->
         <form method="post" action="{% url 'download'%}">
             {% csrf_token %}
-            <button class="btn btn-primary" type="submit">Descargar Archivo</button>
+            <button class="btn btn-primary" type="submit">Descargar APK</button>
         </form>
     </div>
+
+    <footer>
+        <div class="container text-center">
+            <h3>Desarrolladores</h3>
+            <p>Luciano Pino Aguilar - Alonso Soto Urbina</p>
+            <p>&copy; 2023 Desarrollo de aplicaciones móviles. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>

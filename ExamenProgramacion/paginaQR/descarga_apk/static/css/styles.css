@@ -4,4 +4,14 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    padding-bottom: 60px; /* Asegura que el footer no se superponga al contenido en dispositivos móviles */    
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* Cambia el color de fondo según tus preferencias */
+    color: #ffffff; /* Cambia el color del texto según tus preferencias */
+    padding: 1rem;
 }
